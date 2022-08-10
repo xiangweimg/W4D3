@@ -8,6 +8,10 @@ class Bishop < Piece
         @symbol = :bishop
     end
 
+    def to_s
+        @color == :black ? "♗" : "♝"
+    end
+
     def move_dirs
         [
             [1, 1],

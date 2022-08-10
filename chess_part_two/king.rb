@@ -8,6 +8,10 @@ class King < Piece
         @symbol = :king
     end
 
+    def to_s
+        @color == :black ? "♕" : "♛"
+    end
+
     def move_diffs
         [
             [0, -1],

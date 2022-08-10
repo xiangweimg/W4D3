@@ -6,6 +6,7 @@ require_relative "null_piece.rb"
 require_relative "pawn.rb"
 require_relative "queen.rb"
 require_relative "rook.rb"
+require 'colorize'
 
 class Board
     def initialize
@@ -55,5 +56,10 @@ class Board
         @board[end_pos[0]][end_pos[1]] = piece
     end
 
+    def in_check?(color)
+        #loop over all the pieces of the opposite color
+        #if any piece has an available move with the position of the king in color, then color is in check
 
+    end
+    #checkmate is when there are no available moves for king or when no team piece can block the space
 end

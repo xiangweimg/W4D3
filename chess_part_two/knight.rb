@@ -8,6 +8,10 @@ class Knight < Piece
         @symbol = :knight
     end
 
+    def to_s
+        @color == :black ? "♘" : "♞"
+    end
+
     def move_diffs
         [
             [-2, -1],

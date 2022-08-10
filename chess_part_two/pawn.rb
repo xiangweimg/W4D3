@@ -3,7 +3,11 @@ require_relative "piece.rb"
 class Pawn < Piece
     def initialize(color, board, pos)
         super
-        @symbol = :pawn
+        # @symbol = :pawn
+    end
+
+    def to_s
+        @color == :black ? "♙" : "♟"
     end
 
     def at_start_row?

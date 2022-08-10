@@ -73,9 +73,9 @@ class Piece
 
     attr_reader :color, :pos
 
-    def to_s
-        "#{Symbol}"
-    end
+    # def to_s
+    #     "#{Symbol}"
+    # end
 
     def empty?(pos)
         @board[pos[0]][pos[1]].nil?
@@ -89,9 +89,9 @@ class Piece
         @board[pos[0]][pos[1]] = val
     end
 
-    def Symbol
-        # self.symbol
-    end
+    # def Symbol
+    #     # self.symbol
+    # end
 
     # def move_into_check?(end_pos)
     # end

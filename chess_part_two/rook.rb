@@ -8,6 +8,10 @@ class Rook < Piece
         @symbol = :rook
     end
 
+    def to_s
+        @color == :black ? "♖" : "♜"
+    end
+
     def move_dirs
         [
             [0, 1],
